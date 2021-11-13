@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList, Pressable, Text } from 'react-native';
 import { Auth } from 'aws-amplify';
 
 import ChatRoomItem from '../components/ChatRoomItem';
@@ -18,6 +18,10 @@ export default function HomeScreen() {
         renderItem={({ item }) => <ChatRoomItem chatRoom={item} />}
         showsVerticalScrollIndicator={false}
       />
+
+      {/* <Pressable onPress={logOut} style={{ backgroundColor: 'red', height: 5 0, width: 100 }}>
+        <Text>Logout</Text>
+      </Pressable> */}
     </View>
   );
 }

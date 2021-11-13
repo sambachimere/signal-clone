@@ -2,8 +2,8 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, FlatList } from 'react-native';
 import { useRoute, useNavigation } from '@react-navigation/core';
 
-import Message from '../components/Message';
 import chatRoomData from '../assets/dummy-data/Chats';
+import Message from '../components/Message';
 import MessageInput from '../components/MessageInput';
 
 export default function ChatRoomScreen() {
